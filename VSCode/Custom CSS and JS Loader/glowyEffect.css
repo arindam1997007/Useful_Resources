@@ -1,0 +1,167 @@
+ .mtk6 {
+   /* color: #f92aad;
+    text-shadow: 0 0 2px #100c0f, 0 0 5px #dc078e33, 0 0 10px #fff3; */
+   color: #ce6700
+ }
+
+ .mtk3 {
+   color: #9a9b99;
+ }
+
+ .mtk4 {
+   color: #f97e72;
+ }
+
+ .mtk10 {
+   /* color: #fdfdfd; */
+   /* text-shadow: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975, 0 0 8px #03edf975; */
+   /* text-shadow: 0 0 2px #eaf903cf, 0 0 4px #03edf975, 0 0 6px #03edf975; */
+   color: #67d2ff;
+   text-shadow: 0 0 15px #12baff;
+ }
+
+ /* .mtk7,.mtk9 {
+    color: #fff5f6;
+    text-shadow: 0 0 2px #000, 0 0 10px #fc1f2c75, 0 0 5px #fc1f2c75, 0 0 25px #fc1f2c75;
+  } */
+
+  .mtk9{
+    color: white;
+  }
+
+
+ .mtk11 {
+   /* color: #91bbff;
+    text-shadow: 0 0 10px #2f36ff, 0 0 22px #9d91ff, 0 0 2px black; */
+   color: #c32de9;
+ }
+
+ .mtk12 {
+   /* color: #67d2ff;
+    text-shadow: 0 0 15px #12baff, 0 0 2px black; */
+   /* color: #fdfdfd;
+    text-shadow: 0 0 2px #eaf903cf, 0 0 4px #03edf975, 0 0 6px #03edf975; */
+   color: #fdfdf6e3
+ }
+
+ .mtk13 {
+   /* color: #67d2ff;
+    text-shadow: 0 0 15px #12baff, 0 0 2px black; */
+   color: #ce6700;
+ }
+
+
+ .mtk8,
+ .mtk14 {
+   color: #f4eee4;
+   text-shadow: 0 0 2px #393a33, 0 0 8px #f39f0575, 0 0 2px #f39f0575;
+ }
+
+ .monaco-editor .margin,
+ .monaco-editor .inputarea.ime-input {
+   background: transparent;
+ }
+
+
+  /* Remove Existing background */
+ .monaco-editor {
+   background: transparent !important;
+   background: none !important;
+ }
+
+ 
+ .monaco-editor-background {
+   background: none !important;
+ }
+
+ /* Add the subtle gradient to the editor container background  */
+ .monaco-editor .overflow-guard {
+   background-image: linear-gradient(to bottom, #200122 50%,#000428);
+   background-size: auto 100vh;
+   background-position: top;
+   background-repeat: no-repeat;
+ }
+
+
+ /* Active tab Gradient Border  */
+ .monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.sizing-fit.active {
+   box-shadow: inset 0 -5px 25px #fc28a825;
+   position: relative;
+ }
+
+ .monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.sizing-fit.active::after {
+   content: '';
+   position: absolute;
+   bottom: -1px;
+   left: 0;
+   right: 0;
+   height: 4px;
+   background: linear-gradient(to right, #fc28a8, #f3f700) !important;
+   opacity: 1;
+   z-index: 6;
+ }
+
+ /* Inactive tab Transition */
+ .monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.sizing-fit {
+   box-shadow: inset 0 -5px 25px #fc28a825;
+   position: relative;
+ }
+
+ .monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.sizing-fit::after {
+   content: '';
+   position: absolute;
+   bottom: -1px;
+   left: 0;
+   right: 0;
+   height: 0px;
+   transition: opacity 1s;
+   opacity: 0;
+   z-index: 6;
+ }
+
+
+ /* Activity Bar badge styles */
+ .monaco-workbench .activitybar>.content :not(.monaco-menu)>.monaco-action-bar .badge .badge-content {
+   background: linear-gradient(to bottom, #fff951 25%, #fc28a8) !important;
+   color: #030038 !important;
+ }
+
+
+ /* Remove existing border for sidebar item */
+.monaco-workbench .activitybar > .content :not(.monaco-menu) > .monaco-action-bar .action-item.checked .active-item-indicator:before{
+  border:none ;
+}
+
+
+ /* Active sidebar item  */
+ .monaco-workbench .activitybar>.content .monaco-action-bar .action-item.checked {
+   box-shadow: inset 0 -5px 25px #fc28a825;
+   position: relative;
+ }
+
+.monaco-workbench .activitybar>.content .composite-bar>.monaco-action-bar .action-item::after {
+   content: '';
+   position: absolute;
+   bottom: 0px;
+   top: 0px;
+   left: 0px;
+   width: 0px;
+   transition: opacity 1s;
+   display: inline-block ;
+   opacity: 0;
+   height: 0;
+ }
+
+.monaco-workbench .activitybar>.content .composite-bar>.monaco-action-bar .action-item.checked::after{
+  content: '' ;
+  position: absolute ;
+  bottom: 0px ;
+  top: 0px ;
+  left: 0px ;
+  background:linear-gradient(to bottom, #3A1C71, #D76D77, #FFAF7B);
+  opacity: 1 ;
+  display: inline-block ;
+  height: 100%;
+  width: 4px;
+  z-index: 2;
+}
